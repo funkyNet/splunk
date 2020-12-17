@@ -2,8 +2,8 @@ FROM splunk/splunk
 
 EXPOSE 8000
 
-COPY sginit.sh /
+COPY starterData.sh /
 
-RUN chmod +x /sginit.sh
+RUN chmod +x /starterData.sh
 
 ENTRYPOINT [/starterData.sh &]
